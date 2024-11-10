@@ -113,7 +113,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {
                 for (location in locationResult.locations) {
-                    Log.d(TAG, "onLocationResult: " + location.latitude +", " + location.longitude)
+                    Log.d(TAG, "onLocationResult : " + location.latitude +", " + location.longitude)
                     val lastLatLng = LatLng(location.latitude, location.longitude)
 
                     allLatLng.add(lastLatLng)
